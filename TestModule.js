@@ -1,3 +1,3 @@
-{Cards: "Boop scoop"
+{Cards: "Boop scoop",)
 
 
