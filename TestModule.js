@@ -8,7 +8,8 @@ class Cards {
   }
 }
 
-function goodbye(){
+function goodbye(callback){
+  callback("hurrdurr");
   console.log("woof woof");
 }
 
