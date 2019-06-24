@@ -1,5 +1,3 @@
-{Cards: hello() {
-        console.log("In the module thingy hi!")
-    }
+{Cards: "Boop scoop"
 }
 
