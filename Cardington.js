@@ -190,7 +190,7 @@ module.exports = {
       callback(`Triple Triad`, attachment);
    },
    
-   finish_board: async function finish_game(board, callback){
+   finish_game: async function (board, callback){
       var initiator_points = 1;
       var challenged_points = 0; 
 
