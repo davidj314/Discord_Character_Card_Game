@@ -1,11 +1,5 @@
-class Thingy {
-  constructor() {
-    this.x = "boop"
-  }
-
-  static con() {
-    console.log("oof");
-  }
+module.exports = {
+   hello: function() {
+      console.log("did this work?");
+   }
 }
-
-static ugh(){console.log("meow")}
