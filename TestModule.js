@@ -1,3 +1,1 @@
-{Cards: "Boop scoop",)
-
-
+function hello(){console.log("oof");}
