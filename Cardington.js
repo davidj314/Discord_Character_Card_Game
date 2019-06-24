@@ -561,6 +561,5 @@ async function show_board (positions, callback){
 
       const attachment = new Discord.Attachment(canvas.toBuffer(), 'board.png');
       callback(`Triple Triad`, attachment);
-   },
-	   
+   }
 	  
