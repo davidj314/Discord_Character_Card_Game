@@ -2,5 +2,9 @@
   "name": "Card_Mod",
   "description": "Module for the triple triad stuff",
   "version": "0.0.1",
-  "main": "Cardington.js"
+  "main": "Cardington.js",
+  "dependencies": {
+    "discord.js": "11.5.0",
+    "canvas": "2.3.1"
+  }
 }
