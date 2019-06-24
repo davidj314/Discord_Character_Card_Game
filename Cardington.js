@@ -7,3 +7,5 @@ class Thingy {
     console.log("oof");
   }
 }
+
+static ugh(){console.log("meow")}
