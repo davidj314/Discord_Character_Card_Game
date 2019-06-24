@@ -1,1 +1,9 @@
-function hello(){console.log("oof");}
+class Thingy {
+  constructor() {
+    this.x = "boop"
+  }
+
+  static con() {
+    console.log("oof");
+  }
+}
