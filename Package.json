@@ -2,9 +2,5 @@
   "name": "Card_Mod",
   "description": "Module for the triple triad stuff",
   "version": "0.0.0",
-  "main": "TestModule.js",
-  "dependencies": {
-    "discord.js": "11.5.0",
-    "pg": "7.x"
-  }
+  "main": "TestModule.js"
 }
