@@ -33,7 +33,8 @@ module.exports = {
 		}
 
       		const attachment = new Discord.Attachment(canvas.toBuffer(), 'hand.png');
-      		callback(`${nick}'s Hand`, attachment);	   
+      		callback(`${nick}'s Hand`, attachment);	  
+		return new Promise(resolve => {});
 	},
    
 	show_board: async function (positions, callback){
