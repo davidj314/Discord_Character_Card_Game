@@ -423,6 +423,46 @@ module.exports = {
                 help_txt += "rp!roll [minumum] [maximum] -- Generates number between minimum and maximum. Minimum is assumed 0 if omitted.\n";
 		help_txt += "rp!tri_help -- Shows commands involving Triple Triad!\n";
                 callback(help_txt);	
+	},
+	
+	handle_card_xp: function(card, message, callback, fin){
+		var clevels = [500, 1000,1500,3000,5000,7500,10000,12500,15000,17500,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000,20000];
+		var points = card.upval + card.downval + card.leftval + card.rightval;
+		if (points >= 36) return;
+		var up_num = card.upval;
+		var down_num = card.downval;
+		var left_num = card.leftval;
+		var right_num = card.rightval;
+		var goal = clevels[points-7];
+		var xp = parseInt(card.xp) + message.content.length;
+		while (xp > goal)
+		{
+			xp -= goal;
+			points++;
+			goal = clevels[points-8];
+			while (10 > 1)
+			{
+				var side = Math.floor(Math.random() * (4+1 - 1) + 1);
+				if (side == 1 && up_num < 9){
+					callback('upval')
+					break;
+				}
+				else if (side == 2 && left_num < 9){
+					callback('leftval')
+					break;
+				}
+				else if (side == 3 && right_num < 9){
+					callback('rightval')
+					break;
+				}
+				else if (side == 4 && down_num < 9){
+					callback('downval')
+					break;
+				}
+			}
+			if (points>=36)return;
+		}
+		fin(xp);
 	}
 
    
